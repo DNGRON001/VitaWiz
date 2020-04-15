@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaWiz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/wizard_Icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Stylesheet.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#Home"><img src="images/vitawiz_Logo_Home.png" alt="Logo" style="width: 40%;" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-right" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#CV Repsitory">View CVs</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#AboutUS">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact us">Contact Us</a></li>
+                    <li class="nav-item logged-out" >
+                      <a href="#" class="nav-link  modal-trigger" data-target="modal-login" style="font-family:Arial, Helvetica, sans-serif">Login</a>
+                    </li>
+                    <li class="nav-item logged-in" style="display: none;" >
+                        <a href="#" class="nav-link" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item logged-out" >
+                      <a href="#" class="nav-link modal-trigger" data-target="modal-signup" style="font-family:Arial, Helvetica, sans-serif">Sign up</a>
+                    </li>
+                </ul> 
+               
+            </div>
+            <!-- <ul class="collapse navbar-collapse navbar-nav navbar-right" id="navbarTogglerDemo02">
+                <li class="nav-item"><a class="nav-link" href="#Signup"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                
+           
+            </ul> -->
+        </div>  
+
+    </nav>
+    <div class="Container-fluid text-center">
+        <h1> Welcome to VitaWiz! </h1>
+
+    </div>
+    <div> 
+
+      <Section>
+
+      </Section>
+
+      <aside>
+
+      </aside>
+    </div>
+
+    <footer class="container-fluid text-center py-3">
+        <a href="#Home">Home</a> |
+        <a href="#Contact Us"> Contact Us</a> |
+        <a href="#About Us"> About Us</a> </br>
+        <div class="footer-copyright text-center py-3">
+            &copy VitaWiz by Ronglu
+        </div>
+
+
+    </footer>
+     <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal fade bd-example-modal-lg">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Password</label>
+        </div>
+        <div class="link">
+          <a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ltmpl=default&dsh=S-1006459005%3A1586771048682384&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank">
+          Don't have an email address?</a>
+        </div>
+        <br>
+        <button class="btn blue darken-2 z-depth-0">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal fade bd-example-modal-lg">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Password</label>
+        </div>
+        <div class="link">
+          <a href="">Forgot Password</a>
+        </div>
+        <br>
+        <button class="btn blue darken-2 z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyDXi_12SEDRpiCwwLnRGB0NxJ7hb-jcM4k",
+      authDomain: "vitawiz.firebaseapp.com",
+      databaseURL: "https://vitawiz.firebaseio.com",
+      projectId: "vitawiz",
+      storageBucket: "vitawiz.appspot.com",
+      messagingSenderId: "1030056848309",
+      appId: "1:1030056848309:web:55888e17198e4eb4db07fc",
+      measurementId: "G-6PM1731QQL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Tony's code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

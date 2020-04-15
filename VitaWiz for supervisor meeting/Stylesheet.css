@@ -1,0 +1,32 @@
+nav{
+    background-color:  #e3f2fd ;
+} 
+img{
+    height: 30%;
+    width: 50%;
+}
+.navbar-brand{
+width: 20%;
+height: 70%;
+padding-right: 0%;
+margin-right: 0%;
+}
+.navbar-right{
+    margin-right: 50px;
+}
+footer{
+    background-color: #e3f2fd;
+    position: absolute;
+    bottom: 0;
+    
+}
+.modal{
+    width: 40%;
+    height: 40%;
+}
+body {
+    background-image: url('w.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }

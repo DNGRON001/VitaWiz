@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Select a template</title>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,20 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-light shadow">
-        <a class="navbar-brand" href="#Home"><img src="images/VitaWiz Logo.png" alt="Logo" style="width: 40%;"></a>
+
+        <a class="navbar-brand" href="index.html"><img src="images/VitaWiz Logo.png" alt="Logo" style="width: 40%;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
 
 
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#CV Repsitory">View CVs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#AboutUS">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Contact us">Contact Us</a></li>
-                <li class="nav-item logged-out">
-                    <a href="#" class="nav-link  modal-trigger" data-target="modal-login" style="font-family:Arial, Helvetica, sans-serif">Login</a>
-                </li>
-                <li class="nav-item logged-in" style="display: none;">
-                    <a href="#" class="nav-link" id="logout">Logout</a>
-                </li>
-                <li class="nav-item logged-out">
-                    <a href="#" class="nav-link modal-trigger" data-target="modal-signup" style="font-family:Arial, Helvetica, sans-serif">Sign up</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
             </ul>
         </div>
 
@@ -41,10 +35,12 @@
             <h3><b>Please Select<br>Your Job Role</b></h3>
             <a href="WBar.html">BARTENDER</a>
             <a href="WBrick.html">BRICKLAYER</a>
+            <a href="WConstruct.html">CONSTRUCTION</a>
             <a href="WDomestic.html">DOMESTIC</a>
             <a href="WFarm.html">FARM PICKER</a>
             <a href="WGardener.html">GARDENER</a>
             <a href="WJanitor.html">JANITOR</a>
+            <a href="WNanny.html">NANNY</a>
             <a href="WPaint.html">PAINTER</a>
             <a href="WSecurity.html">SECURITY</a>
             <a href="WTree.html">TREE FELLING</a>
@@ -88,7 +84,7 @@
 
             <div class="cont">
                 <a href="WGardener.html">
-                    <img src="/images/pngwave (7).png"></a>
+                    <img src="images/pngwave (7).png"></a>
                 <div class="bottomright"><u>Gardener</u></div>
             </div>
 
@@ -108,7 +104,18 @@
         </div>
 
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>

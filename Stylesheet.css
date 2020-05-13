@@ -1,3 +1,8 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 nav {
     background-color: #e3f2fd;
 }
@@ -34,6 +39,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    margin-bottom: 120px;
 }
 
 
@@ -56,10 +62,6 @@ body {
     background-color: #dcebf3;
     border: 2px solid #adbace;
     font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 400px;
-    bottom: 200px;
 }
 
 @media only screen and (max-width:620px) {

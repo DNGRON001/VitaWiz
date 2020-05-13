@@ -12,7 +12,7 @@
 
 
 
-        <a class="navbar-brand" href="#Home"><img src="images/VitaWiz Logo.png" alt="Logo" style="width: 40%;"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/VitaWiz Logo.png" alt="Logo" style="width: 40%;"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -26,50 +26,83 @@
 
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="#CV Repsitory">View CVs</a></li>
 
-                <li class="nav-item"><a class="nav-link" href="#AboutUS">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
 
-                <li class="nav-item"><a class="nav-link" href="#Contact us">Contact Us</a></li>
-
-                <li class="nav-item logged-out">
-
-                    <a href="#" class="nav-link  modal-trigger" data-target="modal-login" style="font-family:Arial, Helvetica, sans-serif">Login</a>
-
-                </li>
-
-                <li class="nav-item logged-in" style="display: none;">
-
-                    <a href="#" class="nav-link" id="logout">Logout</a>
-
-                </li>
-
-                <li class="nav-item logged-out">
-
-                    <a href="#" class="nav-link modal-trigger" data-target="modal-signup" style="font-family:Arial, Helvetica, sans-serif">Sign up</a>
-
-                </li>
-
-            </ul>
-
-
-
+                <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
         </div>
 
     </nav>
-    <img src="images/youngwiz.png" class="youngwiz" style=" width:30%; height: 350px; max-width: 400px; position: relative;left: 30px; top: 100px;">
+    <br>
 
-    <div class="box" style="width: 400px; ">
-        <h2>Welcome to VitaWiz! </h2><br>
-        <h2>This wizard will help you create a CV for the <u>Bartender</u> role.</h2>
+    <div class="Container-fluid text-center">
+        <h1></h1>
     </div>
 
-    <div style="width: 70%; position: relative; left: 1000px; bottom: 150px;max-width: 100%;">
-        <button type="submit" class="vbutton" formaction="#details">NEXT</button>
-    </div>
+    </br>
+    </br>
+    </br>
+    </br>
 
+    <div class="container-fluid">
+
+        <div class="row">
+
+
+
+            <Section class="col-sm-6">
+
+                <!-- <div class="row"> -->
+
+                <div class="text-center pic">
+
+                    <img src="images/youngwiz.png" alt="Mascot" class="img-thumbnail" class="wiz">
+
+                </div>
+
+                <!-- </div> -->
+
+            </Section>
+
+
+
+            <aside class="col-sm-6">
+
+                <!-- <div class="row"> -->
+
+                <div class="box text-center get_started">
+
+                    <H2>Welcome to VitaWiz!</H2>
+
+                    </br>
+
+                    <p style="font-size: large;">This wizard will help you create a CV for the <u>Bricklayer</u> role.
+                    </p><br>
+
+
+
+                </div>
+                <br>
+                <div class="text-center">
+
+                    <button type="button" onclick="document.location = 'login.html'" class="btn btn-primary">
+
+                NEXT
+
+              </button>
+
+                </div>
+
+                <!-- </div> -->
+
+            </aside>
+
+        </div>
+
+    </div>
     <!-- Footer -->
     <footer class="footer container-fluid text-center py-3 shadow">
 
@@ -86,6 +119,18 @@
         </div>
 
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>

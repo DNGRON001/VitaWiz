@@ -1,0 +1,137 @@
+nav {
+    background-color: #e3f2fd;
+}
+
+img {
+    height: 30%;
+    width: 50%;
+}
+
+.navbar-brand {
+    width: 20%;
+    height: 70%;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+
+.navbar-right {
+    margin-right: 50px;
+}
+
+footer {
+    background-color: #e3f2fd;
+    position: absolute;
+    bottom: 0;
+}
+
+.modal {
+    width: 40%;
+    height: 40%;
+}
+
+body {
+    background-image: url('w.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/* Start of new CSS */
+
+.vbutton {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.box {
+    border-radius: 30px;
+    background-color: #dcebf3;
+    border: 2px solid #adbace;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 400px;
+    bottom: 200px;
+}
+
+@media only screen and (max-width:620px) {
+    .box,
+    .youngwiz,
+    .vbutton {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color: #dcebf3;
+}
+
+.menu a {
+    background-color: #fafafa;
+    border: 1px solid #182d65;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.main {
+    float: left;
+    width: 35%;
+    padding: 0 20px;
+}
+
+.main img {
+    width: 100%;
+    margin-top: 5px;
+    height: 350px;
+}
+
+.right {
+    float: left;
+    width: 35%;
+    padding: 0 20px;
+}
+
+.right img {
+    width: 100%;
+    margin-top: 5px;
+    height: 350px;
+}
+
+.cont {
+    position: relative;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}

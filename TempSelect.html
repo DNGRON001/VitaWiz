@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light shadow">
+        <a class="navbar-brand" href="#Home"><img src="images/VitaWiz Logo.png" alt="Logo" style="width: 40%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#CV Repsitory">View CVs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#AboutUS">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact us">Contact Us</a></li>
+                <li class="nav-item logged-out">
+                    <a href="#" class="nav-link  modal-trigger" data-target="modal-login" style="font-family:Arial, Helvetica, sans-serif">Login</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" class="nav-link" id="logout">Logout</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="#" class="nav-link modal-trigger" data-target="modal-signup" style="font-family:Arial, Helvetica, sans-serif">Sign up</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Sidebar menu-->
+    <div style="overflow:auto">
+        <div class="menu">
+            <h3><b>Please Select<br>Your Job Role</b></h3>
+            <a href="WBar.html">BARTENDER</a>
+            <a href="WBrick.html">BRICKLAYER</a>
+            <a href="WDomestic.html">DOMESTIC</a>
+            <a href="WFarm.html">FARM PICKER</a>
+            <a href="WGardener.html">GARDENER</a>
+            <a href="WJanitor.html">JANITOR</a>
+            <a href="WPaint.html">PAINTER</a>
+            <a href="WSecurity.html">SECURITY</a>
+            <a href="WTree.html">TREE FELLING</a>
+            <a href="WWait.html">WAITER</a>
+        </div>
+        <!-- First column of images -->
+        <div class="main">
+            <div class="cont">
+                <a href="WBrick.html">
+                    <img src="images/brick.jpg"></a>
+                <div class="bottomright"><u>Bricklayer</u></div>
+            </div>
+
+            <div class="cont">
+                <a href="WJanitor.html">
+                    <img src="images/janitor.jpg"></a>
+                <div class="bottomright"><u>Janitor</u></div>
+            </div>
+
+            <div class="cont">
+                <a href="WDomestic.html">
+                    <img src="images/pngwave (1).png"></a>
+                <div class="bottomright"><u>Domestic</u></div>
+            </div>
+
+        </div>
+        <!-- Second column of images -->
+        <div class="right">
+
+            <div class="cont">
+                <a href="WSecurity.html">
+                    <img src="images/pngwave (4).png"></a>
+                <div class="bottomright"><u>Security</u></div>
+            </div>
+
+            <div class="cont">
+                <a href="WWait.html">
+                    <img src="images/pngwave (5).png"></a>
+                <div class="bottomright"><u>Waiter</u></div>
+            </div>
+
+            <div class="cont">
+                <a href="WGardener.html">
+                    <img src="/images/pngwave (7).png"></a>
+                <div class="bottomright"><u>Gardener</u></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer class="container-fluid text-center py-3 " style="position: relative; ">
+
+        <a href="#Home ">Home</a> |
+        <a href="#Contact Us "> Contact Us</a> |
+        <a href="#About Us "> About Us</a> </br>
+        <div class="footer-copyright text-center py-3 ">
+            &copy VitaWiz by Ronglu
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

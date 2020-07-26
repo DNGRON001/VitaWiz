@@ -24,6 +24,15 @@ signupForm.addEventListener('submit', (e) => {
       
     // sign up the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
+      //sendLink    
+      var user = firebase.auth().currentUser;
+
+      user.sendEmailVerification().then(function() {
+        // Email sent.
+      }).catch(function(error) {
+        // An error happened.
+      });
+
       // create jobseeker details
       db.collection("Jobseeker").doc(cred.user.uid).set({
         FirstName: document.getElementById("signup-Name").value,
@@ -32,15 +41,8 @@ signupForm.addEventListener('submit', (e) => {
         DOB:  document.getElementById("signup-DOB").value,
         Notes: "",
         Region: ""
-      }).then(()=>{
-        //sendLink    
-        var user = firebase.auth().currentUser;
-
-        user.sendEmailVerification().then(function() {
-          // Email sent.
-        }).catch(function(error) {
-          // An error happened.
-        });
+      })
+        
         // close the signup modal & reset form
         const modal = document.querySelector('#modalRegisterForm');
         $('#modalRegisterForm').modal('hide');
@@ -49,7 +51,7 @@ signupForm.addEventListener('submit', (e) => {
         auth.signOut();
         
         alert("Please check your email and follow the link to complete the verification process.");
-      });
+    
       
     }).catch(err => {
       signupForm.querySelector('.error').innerHTML = err.message;

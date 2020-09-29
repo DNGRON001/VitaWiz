@@ -1,0 +1,60 @@
+.Win{
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    display:none;
+    
+}
+
+/* #MSForm fieldset:not(:first-of-type){
+    display: none;
+} */
+#panzoom:hover{
+    opacity: 0.9;
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.step.active {
+    opacity: 1;
+}
+.step.finish {
+    background-color: #4CAF50;
+  }
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-substitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+aside{
+    padding: 50px;
+}
+fieldset{
+    margin: 10px;
+    padding: 20px;
+}
+#messageLimit{
+    display:none;
+    color: red;
+}
+li{
+    display: inline-block;
+}

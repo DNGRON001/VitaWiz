@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Your CV</title>
+        <link rel="stylesheet" href="cvstyle.css">
+        <!-- Fontawesome 6 for icons (number is from my account, dont think it matters though) -->
+        <!-- JsPDF CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+
+
+    </head>
+
+    <body id="TheBigBody">
+
+        <div class="resume">
+            <div class="resume_left" id="left">
+                <!-- PROFILE PIC to be inserted here... -->
+                <div class="resume_profile">
+                    <img src="avatar-1577909_640.png" alt="profile pic" id="thePlaceHolder">
+                </div>
+                <div class="resume_content">
+                    <div class="resume_item resume_info">
+                        <!-- Insert NAME here -->
+                        <div class="title">
+                            <p class="bold" id="ProfileName"></p>
+                            <p class="regular">Domestic Worker</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-map-signs"></i>
+                                </div>
+                                <div class="data">
+                                    <!-- ADDRESS -->
+                                    <p id="theRegion"></p>
+                                    <!-- PROVINCE -->Western Cape
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="data">
+                                    <!-- PHONE -->
+                                    <p id="PhoneNum"></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="data">
+                                    <!-- EMAIL -->
+                                    <p id="EmailAddress"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Jobseeker skill section -->
+                    <!-- Adjust values (bar and text values) for each skill -->
+                    <!-- Could be cool to have a JS sliding bar thing to let them pick -->
+                    <!--  <div class="resume_item resume_skills">
+                    <div class="title">
+                        <p class="bold">skills</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="skill_name">
+                                Customer service
+                                <br>
+                                <br>
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 95%;"></span>
+                            </div>
+                            <div class="skill_per">95%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                Communication
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="skill_progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                            <div class="skill_per">70%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                Cocktails
+                                <br>
+                                <br>
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                            <div class="skill_per">90%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                Time
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                            <div class="skill_per">60%</div>
+                        </li>
+                    </ul>
+                </div> -->
+                    <!-- <div class="resume_item resume_social">
+                    <div class="title">
+                        <p class="bold">Socials</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Facebook</p>
+                                <p>sandra@facebook</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-twitter-square"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Twitter</p>
+                                <p>sandra@twitter</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Linkedin</p>
+                                <p>sandra@linkedin</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="resume_right">
+                <div class="resume_item resume_about">
+                    <div class="title">
+                        <p class="bold">About me</p>
+                    </div>
+                    <p id="AboutMePara"></p>
+                </div>
+                <!-- Job history -->
+                <div class="resume_item resume_work">
+                    <div class="title">
+                        <p class="bold">Work History</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="date" id="JDate1"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="JobTitle1"></p>
+                                <p id="Company1"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="JDate2"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="JobTitle2"></p>
+                                <p id="Company2"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="JDate3"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="JobTitle3"></p>
+                                <p id="Company3"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_education">
+                    <div class="title">
+                        <p class="bold">Qualifications</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date" id="Edate1"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="ETitle1"></p>
+                                <p id="Grade1"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="Edate2"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="ETitle2"></p>
+                                <p id="Grade2"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="Edate3"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="ETitle3"></p>
+                                <p id="Grade3"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Edate4" id="Edate4"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="ETitle4"></p>
+                                <p id="Grade4"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Hobbies section, just uses fontawesome icons for now. Either choose from 
+                list of hobbies or think of a different section...
+            Maybe:
+                - qualifications 
+                - references
+                - etc 
+            Also bit of empty space there right now -->
+                <div class="resume_item resume_education">
+                    <div class="title">
+                        <p class="bold">Documentation</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date" id="Ddate1"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="DTitle1"></p>
+                                <p id="DGrade1"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="Ddate2"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="DTitle2"></p>
+                                <p id="DGrade2"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date" id="Ddate3"></div>
+                            <div class="info">
+                                <p class="semi-bold" id="DTitle3"></p>
+                                <p id="DGrade3"></p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/57282fc1e9.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+        <script src="html2canvas.min.js"></script>
+        <script>
+
+            var firebaseConfig = {
+                apiKey: "AIzaSyDXi_12SEDRpiCwwLnRGB0NxJ7hb-jcM4k",
+                authDomain: "vitawiz.firebaseapp.com",
+                databaseURL: "https://vitawiz.firebaseio.com",
+                projectId: "vitawiz",
+                storageBucket: "vitawiz.appspot.com",
+                messagingSenderId: "1030056848309",
+                appId: "1:1030056848309:web:55888e17198e4eb4db07fc",
+                measurementId: "G-6PM1731QQL"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // make auth, storage and firestore references
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            const storage = firebase.storage();
+      // update firestore settings
+            /* db.settings({ timestampsInSnapshots: true }); */
+        </script>
+        <script src="CVload.js"></script>
+    </body>
+
+</html>

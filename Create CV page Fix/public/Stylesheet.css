@@ -1,0 +1,327 @@
+html{
+    position: relative;
+    min-height: 100%;
+    
+}
+nav{
+    background-color:  #e3f2fd ;
+} 
+footer{
+    background-color: #e3f2fd;
+    position: absolute;
+    bottom: 0;
+}
+
+
+  
+.btn-primary:hover {
+background-color: white;
+color: #008CBA;
+}
+
+.btn-primary:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.pic{
+    margin:20px;
+}
+/* .contactUS_img{
+    height: ;: 30px;
+} */
+body {
+    
+    margin-bottom: 120px;
+    text-align: left; 
+    font-size: large;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+   font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  td{
+    padding: 15px;
+  }
+  /* .canvas{
+    width: 100%;
+    height: auto;
+  } */
+  /* start of mikes code */
+ .vbutton {
+        background-color: #1976D2;
+        color: white;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        opacity: 0.6;
+    }
+    
+    .box {
+        border-radius: 30px;
+        background-color: #dcebf3;
+        border: 2px solid #adbace;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width:620px) {
+        .box,
+        .youngwiz,
+        .vbutton {
+            width: 100%;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .menu {
+        float: left;
+        width: 30%;
+        text-align: center;
+        background-color: #dcebf3;
+    }
+    
+    .menu a {
+        background-color: #fafafa;
+        border: 1px solid #182d65;
+        border-radius: 10px;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+    }
+    
+    .main {
+        float: left;
+        width: 35%;
+        padding: 0 20px;
+    }
+    
+    .main img {
+        width: 100%;
+        margin-top: 5px;
+        height: 350px;
+    }
+    
+    .right {
+        float: left;
+        width: 35%;
+        padding: 0 20px;
+    }
+    
+    .right img {
+        width: 100%;
+        margin-top: 5px;
+        height: 350px;
+    }
+    
+    .bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+    
+    @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .menu,
+        .main,
+        .right {
+            width: 100%;
+        }
+    }
+    
+    .page-title {
+        font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 25px;
+        color: #277fd9;
+        font-weight: 300;
+    }
+    
+    .more-info {
+        width: 14px;
+        height: 20px;
+        color: #d7dde2;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        padding-left: 3px;
+        position: absolute;
+    }
+    /* Button styling */
+    /* Experience buttons */
+    
+    .myButton {
+        box-shadow: 3px 4px 0px 0px #1564ad;
+        background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+        background-color: #79bbff;
+        border-radius: 5px;
+        border: 1px solid #337bc4;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 12px 44px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #528ecc;
+    }
+    
+    .myButton:hover {
+        background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+        background-color: #378de5;
+    }
+    
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+    /* Back buttons */
+    
+    .backButton {
+        box-shadow: 3px 4px 0px 0px #1564ad;
+        background: linear-gradient(to bottom, #96c1eb 5%, #aacaeb 100%);
+        background-color: #96c1eb;
+        border-radius: 5px;
+        border: 1px solid #337bc4;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 12px 44px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #528ecc;
+    }
+    
+    .backButton:hover {
+        background: linear-gradient(to bottom, #aacaeb 5%, #96c1eb 100%);
+        background-color: #aacaeb;
+    }
+    
+    .backButton:active {
+        position: relative;
+        top: 1px;
+    }
+    /* Next buttons */
+    /* Use myButton*/
+    /* Hover overlay*/
+    
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .container:hover .image {
+        opacity: 0.3;
+    }
+    
+    .container:hover .middle {
+        opacity: 1;
+    }
+    
+    .text {
+        background-color: #5cacf6;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+
+
+
+
